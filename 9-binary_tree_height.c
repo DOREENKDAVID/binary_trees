@@ -14,7 +14,7 @@ int binary_tree_is_leaf(const binary_tree_t *node)
 		return (0);
 }
 /**
- * binary_tree_height = measures heiht of a binary tree
+ * binary_tree_height - measures heiht of a binary tree
  * @tree:is a pointer to the root node of the tree to measure the height.
  * Return: 0 If tree is NULL
  */
@@ -34,5 +34,5 @@ size_t binary_tree_height(const binary_tree_t *tree)
 
 	if (left_height >= right_height)
 		return (1 + left_height);
-	return(1 + right_height);
+	return (1 + right_height);
 }
