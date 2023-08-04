@@ -1,4 +1,4 @@
-#include "binary_tree.h"
+#include "binary_trees.h"
 
 /**
  * binary_trees_ancestor -finds the lowest common ancestor of two nodes
@@ -10,6 +10,7 @@
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 		const binary_tree_t *second)
 {
+	
 	binary_tree_t *node;
 
 	if (first == NULL || second == NULL)
@@ -26,6 +27,7 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 
 		}
 		second = node;
-		first = fist->parent;
+		first = first->parent;
 	}
+	return (NULL);
 }
